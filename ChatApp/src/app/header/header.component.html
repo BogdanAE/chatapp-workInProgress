@@ -1,0 +1,19 @@
+<div class="container-fluid">
+    <div *ngIf="checkUser(); then loginBar else noLoginBar"></div>
+     <ng-template #loginBar>
+        <div class="row">
+            <p id="login" class="pull-left"><a [routerLink]="['/login']">Log in</a></p>
+            <p id="login" class="pull-right"><a [routerLink]="['/signup']">Sign-Up</a></p>
+        </div>
+    </ng-template>
+    <div class="row">
+        <a routerLink="/"><h5 id="appTitle">ChatApp<i class="fa fa-hand-spock-o"></i></h5></a>
+    </div>
+    <ng-template #noLoginBar>
+        <div class="row">
+            <h5 id="userID">&nbsp; <i id="avatar" [class]="userAvatar()"></i><a href="#"><span >&nbsp; {{ this.userService.logged }} </span></a><a (click)="signout()" class="pull-right">Sign Out</a></h5>
+            
+        </div>
+    </ng-template>
+
+</div>

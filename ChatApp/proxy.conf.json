@@ -1,0 +1,9 @@
+{
+    "/JavaScript": {
+      "target": "localhost:4200",
+      "secure": false,
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+  }

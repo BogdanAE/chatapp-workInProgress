@@ -1,0 +1,53 @@
+#chatContainer {
+    border: solid;
+    border-color: rgb(168, 167, 167) ;
+    flood-opacity: 0.3;
+    max-width: 95%;
+    height: calc(100vh - 210px);
+    margin-top: 15px;
+    margin-bottom: 5px;
+    overflow: auto;
+    
+}
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+#mainButton {
+    /* position: absolute; */
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+    font-size: 40px;
+    /* margin-bottom: 2%; */
+    -webkit-transition-delay:   5s;
+    transition: all .5s ease-out 0s;
+    box-shadow: 1px 10px 5px  black;
+    background: linear-gradient(grey, black);
+    background-clip: content-box;
+    border-radius: 10px;
+    background-clip: padding-box;
+
+}
+
+#mainButton:hover {
+    /* position: relative; */
+    left: 5px;
+    transition: box-shadow .2s ease-out;
+    box-shadow: 5px 5px 10px black;
+}
+
+#centerText {
+    text-align: center;
+    padding-top: 5px; 
+    color:white;
+}
+#showText{
+    font-size: 10px;
+}
+
+#countPosts{
+    color: rgb(19, 134, 201);
+}

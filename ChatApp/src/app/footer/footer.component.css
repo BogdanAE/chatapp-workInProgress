@@ -1,0 +1,24 @@
+.container-fluid {
+    /* background-image: url("../shared/wall2bg.jpg"); */
+    background: linear-gradient(gray, black);
+    /* border-radius: 10px; */
+    
+}
+
+#colButton {
+    margin: 10px 0px 10px 0px;
+    font-size:10px;
+    color: black;
+   
+    
+}
+
+#botButton {
+    border-radius: 25px;
+    font-size: 10px;
+}
+
+#contact {
+    color: orangered;
+    font-size: 10px;
+}

@@ -1,0 +1,33 @@
+<div class="container-fluid">
+<div class="row">
+  <div class="col-xs-2"></div>
+  <div class="col-xs-8">
+      <textarea type="text" 
+                class="form-control" 
+                (input)="onTopicMsg($event)"
+                rows="25" id="input" 
+                placeholder="Enter text"></textarea>
+  </div>
+  </div>
+
+<div class="row">
+  <div class="col-xs-2">   </div>
+  <div class="col-xs-6">
+    <div class="form-group" >
+      <label for id="text"><span id="textTag">Enter #Tag</span></label>
+      <input type="text" class="form-control" (input)="onTopicTag($event)" id="text" placeholder="#">
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-7"></div>
+  <div class="col-xs-4">
+      <button [disabled]='!allowSubmit' type="button" class="btn btn-danger" (click)="onLoadText()" ><em>Submit !</em></button>
+      <ng-template #noButton>
+        <button [disabled]>Submit</button>
+      </ng-template>
+  </div>
+  
+</div>
+</div>

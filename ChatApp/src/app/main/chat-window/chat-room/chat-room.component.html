@@ -1,0 +1,69 @@
+<div class="container-fluid">
+  <br>
+  <div class="container-fluid" id="questionContainer">
+    <div *ngFor="let data of dataT">
+      <h3 id="text" *ngIf="data._id == onCheckId()" > {{ data.msg }}</h3>
+    </div>
+  </div>
+
+  
+
+  <div *ngIf="checkAnswerText() == '#'; then nothing else answerBox"></div>
+
+  <ng-template #nothing id="templateText"><br><Br><p id="templateText">No answer was posted yet!</p><br><br></ng-template>
+
+  <ng-template #answerBox>
+      <h5 id="answerText" ><em>Your answer:</em></h5>
+
+  <!-- Answer Container -->
+  <div class="row" >
+    <div class="col-xs-12" >
+        <div *ngFor="let data of dataT">
+          <div *ngIf="data._id == onCheckId()">
+            <div *ngFor="let response of data.response">
+              <div ng-repeat="response">
+                <div class="container-fluid" id="questionContainer"><span id="text" class="pull-right">{{ response }}</span></div>
+                  <div class="row">
+                    <div class="col-xs-4">
+                    </div>
+                      <div class="col-xs-8 text-center">
+                        <p>
+                          <span  id="reptext">Answer was usefull? 
+                            <i type="button" class="fa fa-plus " id="plusbutton" (click)="addRep()"></i>
+                            &nbsp;&nbsp;{{ rep }}&nbsp;&nbsp;<i type="button" class="fa fa-minus" id="minusbutton"   (click)="minusRep()"></i>
+                          </span>
+                        </p>
+                      </div>
+                      <br><hr id="line"><br>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+<!-- ..... -->
+
+</ng-template>
+  <input type="text" 
+        class="form-control" 
+        id="form" 
+        (input)="getAnswerText($event)">
+<br>
+  <div class="row">
+    <div class="col-xs-6"></div>
+    <div class="col-xs-5">  
+      <button type="button" class="btn btn-danger pull-right" (click)="onSubmitAnswer($event)" (changed)="update()"><em>Submit!</em></button>
+    </div> 
+  </div> 
+<br>
+  <div class="row">
+      <div class="col-xs-6"></div>
+    <div class="col-xs-5 ">
+      <button type="button" class="btn btn-warning pull-right" (click)="onDeleteTopic()">Delete Topic</button>
+    </div>
+  </div>
+
+
+  
+</div>

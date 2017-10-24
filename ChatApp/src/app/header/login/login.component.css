@@ -1,0 +1,18 @@
+#forgottenText {
+    text-align: center;
+}
+.row {
+    margin-top: 1%;
+}
+
+.container-fluid {
+    height: calc(100vh - 105px);
+    background: linear-gradient(rgb(53, 52, 52), gray);
+}
+#text {
+    color:white;
+}
+
+#textForgot {
+    color: rgb(71, 140, 230);
+}

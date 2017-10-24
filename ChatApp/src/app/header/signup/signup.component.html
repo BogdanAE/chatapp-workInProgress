@@ -1,0 +1,87 @@
+<div class="container-fluid">
+    <br>
+
+    <!-- e-mail form -->
+    <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6 text-center">
+            <div class="form-group">
+                <label for id="text">Enter e-mail</label>
+                <input 
+                    type="email" 
+                    class="form-control" 
+                    id="email" 
+                    placeholder="E-mail" 
+                    (input)="getEmail($event)">
+            </div>
+        </div>
+    </div>
+    <!-- ...... -->
+
+<!-- password form -->
+    <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6 text-center">
+            <div class="form-group ">
+                <label for id="text">Enter your password</label>
+                <input 
+                    type="password" 
+                    class="form-control" 
+                    placeholder="Password" 
+                    (input)="getPassword($event)">
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- ..... -->
+<!-- nickname form -->
+<div class="row">
+    <div class="col-xs-3"></div>
+    <div class="col-xs-4">
+        <div class="form-group">
+            <label id="text"> Enter display </label>
+            <input type="text" class="form-control" (input)="getNickName($event)" placeholder="Enter your display name">
+        </div>
+    </div>
+</div>
+<br>
+
+    <!-- description container -->
+<div class="row">
+    <div class="col-xs-3"></div>
+    <div class="col-xs-6">
+        <textarea 
+            id="textArea" 
+            type="text" 
+            class="form-control" 
+            rows="5" 
+            placeholder="Enter some edscription" 
+            (input)="getUserDescription($event)"></textarea>
+    </div>
+    <div class="col-xs-3"></div>
+</div>
+<br>
+<!-- ..... -->
+
+    <!-- submit button and avatar button-->
+  <div class="row">
+    <div class="col-xs-3"></div>
+    
+    <div class="col-xs-4">
+            <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" >Choose avatar&nbsp;<span class="caret"></span></button>
+                    
+                        <ul class="dropdown-menu" role="menu">
+                            <li role="presentation" class="dropdown-item">Alien</li>
+                            <li role="presentation" class="dropdown-item">NoAlien</li>
+                        </ul>
+            </div>
+    </div>
+ 
+    <div class="col-xs-5">
+        <button type="button" class="btn btn-primary" (click)="submitCheck()">Submit</button>
+    </div>
+</div>
+<!-- ...... -->
+
+</div>

@@ -1,0 +1,28 @@
+#appTitle {
+    text-align: center;
+    color: rgb(83, 10, 219);
+}
+
+#login {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container-fluid {
+    /* background-image: url("../shared/wall2bg.jpg"); */
+    background: linear-gradient(white, rgb(53, 52, 52));
+    /* border-radius: 10px; */
+    /* vertical-align: bottom; */
+    
+}
+
+#userID {
+    color: white;
+    /* text-align: right; */
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+#avatar {
+    color:black;
+}

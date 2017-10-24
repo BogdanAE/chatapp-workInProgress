@@ -1,0 +1,9 @@
+
+
+#mainContainer {
+    height: calc(100vh - 190px);
+    width: auto;
+    background: linear-gradient(gray, black);
+}
+
+

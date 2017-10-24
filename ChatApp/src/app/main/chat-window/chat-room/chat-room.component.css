@@ -1,0 +1,60 @@
+#text {
+    text-align: left;
+    color: white;
+    font-size: 10px;
+}
+
+#questionContainer {
+    border: solid;
+    color: gray;
+    min-height: 150px;
+    height: auto;
+    width: 75%;
+    background: linear-gradient(gray, black) 
+}
+.container-fluid {
+    height: calc(100vh - 105px);
+    /* height: 100vh; */
+    width: auto;
+    background: linear-gradient(gray, black);
+    overflow: auto;
+}
+
+#answerText {
+    color: white;
+    padding-left: 13%; 
+    font-size: 12px;
+}
+
+#form {
+    margin-left:12.5%;
+    width: 75%;
+}
+
+
+
+#reptext{
+    margin-right: 20%;
+    color: white;
+    font-size: 12px;
+}
+
+#plusbutton:hover{
+    color: green;
+    transition: .9s ease;
+}
+
+#minusbutton:hover{
+    color:red;
+    transition: 2s ease;
+}
+
+#templateText {
+    text-align: center;
+    color: white;
+}
+
+#line {
+    width: 70%;
+    border-color: gray;
+}

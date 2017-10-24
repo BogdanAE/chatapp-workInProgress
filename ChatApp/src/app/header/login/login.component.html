@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6 text-center">
+            <div class="form-group">
+                <label for id="text">Enter e-mail</label>
+                <input 
+                        type="email" 
+                        class="form-control" 
+                        id="email"
+                        (input)="this.userService.getEmail($event)">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6 text-center">
+            <div class="form-group ">
+                <label for id="text">Enter your password</label>
+                <input 
+                        type="password" 
+                        class="form-control"
+                        (input)="this.userService.getPassword($event)">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-xs-8">
+                <button type="button" class="btn pull-right" (click)="this.userService.submitCheck()">Submit</button>
+            </div>
+          </div>
+    <div class="row">
+        <div class="col-xs-6"></div>
+        <div class="col-xs-6">
+            <p id="textForgot">Forgot your password? </p>
+            <p ><a href="#" id="textForgot">Reset Password</a></p>
+        </div>
+    </div>
+
+</div>

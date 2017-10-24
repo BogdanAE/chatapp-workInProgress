@@ -1,0 +1,42 @@
+
+
+.container-fluid {
+    /* background-image: url("../shared/wallbg.jpg"); */
+    /* background-color: rgb(209, 209, 209); */
+    background: linear-gradient(rgb(53, 52, 52), gray);
+    height: calc(100vh - 105px);
+    /* border-radius: 25px; */
+    
+}
+
+#text {
+    color: black;
+    font-size: 90%;
+}
+
+#mainButton {
+    /* position: absolute; */
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+    font-size: 40px;
+    margin-bottom: 2%;
+    margin-left: 45%;
+    transition: box-shadow .5s ease-out;
+    box-shadow: 1px 10px 5px  black;
+    background: linear-gradient(grey, black);
+    background-clip: content-box;
+    border-radius: 10px;
+    background-clip: padding-box;
+
+}
+
+#mainButton:hover {
+    position: relative;
+    left: 5px;
+    transition: box-shadow .2s ease-out;
+    box-shadow: 5px 5px 10px black;
+}
+
+#textTopic {
+    font-size: 90%;
+}

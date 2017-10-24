@@ -1,0 +1,24 @@
+
+<div  *ngIf="dataT?.length >= 1; then content else otherContent "></div>
+<ng-template #content ><p id="centerText">There are : <span id="countPosts">{{ dataT?.length }}</span>  messages posted</p></ng-template>
+<ng-template #otherContent><p id="centerText">There are no messages posted</p></ng-template>
+<div class="container"  id="chatContainer">
+    <ul class="list-group " *ngFor="let data of dataT" >
+      <div class="row">
+        <div class="col-xs-12">
+          <a [routerLink]="['/topic/answer',data._id]"><li class="list-group-item list-group-item-danger" id="showText" > {{ data.msg}} <span class="pull-right"id="showText">{{data.date | date:'dd/MM/yyyy HH:mm'}}</span></li></a>
+        </div>  
+      </div>  
+        <li class="list-group-item list-group-item-success" id="showText">
+           {{data.response}}
+        </li>
+      </ul>
+</div>
+<div class="col-xs-12 text-center">
+  <a routerLink="topic"><i class="fa fa-comments" aria-hidden="false" id="mainButton" >
+
+    <!-- <i class="fa fa-plus-square-o" ></i> 
+    fa fa-circle-o-notch fa-spin pull-center-->
+    </i></a>
+  </div>
+
